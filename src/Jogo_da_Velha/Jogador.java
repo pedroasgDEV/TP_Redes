@@ -1,5 +1,7 @@
 package Jogo_da_Velha;
 
+import java.util.*;
+
 public class Jogador {
 	private String Nome;
 	private int Pontos;
@@ -22,4 +24,9 @@ public class Jogador {
 	public int getPontos(){ return Pontos; }
 	
 	public char getSinal(){ return Sinal;}
+	
+	public void print() {
+		System.out.println("Jogador " + Sinal + ": " + Nome);
+		System.out.println("Pontos: " + Pontos);
+	}
 }
